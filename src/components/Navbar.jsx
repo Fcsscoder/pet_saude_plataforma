@@ -1,13 +1,19 @@
 import Logo from '../public/imgs/WhitePetSaude.png';
 import Button from './ui/Button';
+import { Menu } from 'lucide-react';
 
 const Navbar = () => {
   return (
     <header className="bg-primary w-full text-white no-underline duration-300 max-h-22 p-2.5">
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 ">
-        <div className="flex justify-center md:justify-between items-center">
+        <div className="flex justify-between items-center">
           {/* Logo */}
-          <img src={Logo} alt="Logo Pet Saúde Digital" className="w-12" />
+          <img
+            src={Logo}
+            alt="Logo Pet Saúde Digital"
+            className="w-10 md:w-12"
+          />
+          <Menu size={30} className="md:hidden" />
           {/* <img src={LogoName} className="w-20 h-auto" /> */}
 
           {/* Navegação Desktop */}

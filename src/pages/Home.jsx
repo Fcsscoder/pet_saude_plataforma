@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import {
+  Menu,
   Search,
   BarChart3,
   Video,
@@ -127,11 +128,11 @@ export default function Home() {
     },
   ];
 
-  const filteredCourses = courses.filter(
-    (course) =>
-      course.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      course.description.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  // const filteredCourses = courses.filter(
+  //   (course) =>
+  //     course.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+  //     course.description.toLowerCase().includes(searchTerm.toLowerCase())
+  // );
 
   const toggleCard = (courseId) => {
     setExpandedCards((prev) => ({
@@ -151,15 +152,15 @@ export default function Home() {
         <div className="text-center flex flex-col justify-center items-center mb-12">
           <img
             src={CourseBanner}
-            alt="Logo Pet Saúde Digital"
+            alt="Foto de profissionais da saúde"
             className="hidden md:block w-500 text-center rounded-b-3xl"
           />
           <img
             src={Logo}
             alt="Logo Pet Saúde Digital"
-            className="w-26 text-center mt-10"
+            className="w-15 sm:w-26 text-center mt-10"
           />
-          <h2 className="text-4xl md:text-5xl font-bold text-terciary mb-8 ">
+          <h2 className="text-3xl md:text-4xl font-bold text-terciary mb-4 mt-4">
             Nossos cursos
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
