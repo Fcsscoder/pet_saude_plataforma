@@ -1,4 +1,4 @@
-import Logo from '../public/imgs/WhitePetSaude.png';
+import Logo from '../../public/imgs/WhitePetSaude.png';
 import Button from './ui/Button';
 import { Menu } from 'lucide-react';
 
@@ -21,7 +21,7 @@ const Navbar = () => {
             <a
               href="#"
               className="text-white hover:text-blue-100 px-3 py-2 text-lg font-medium transition-colors duration-200">
-              Home
+              Início
             </a>
             <a
               href="#"

@@ -1,55 +1,19 @@
 import { useState } from 'react';
 
 // Componentes
-
 import CourseCard from '../components/CourseCard';
+import Input from '../components/Input';
 
 // Images
+import CourseBanner from '../../public/imgs/CoursesBanner.png';
+import Logo from '../../public/imgs/PetSaude.png';
 
-import CourseBanner from '../public/imgs/CoursesBanner.png';
-import Logo from '../public/imgs/PetSaude.png';
+// Ícones
+import { SearchSlash, Search } from 'lucide-react';
 
-export default function Home() {
+export default function Home({ courses }) {
   const [searchTerm, setSearchTerm] = useState('');
   const [expandedCards, setExpandedCards] = useState({});
-
-  const courses = [
-    {
-      id: 1,
-      title: 'Análise de Dados em Saúde',
-      hours: '30',
-      description:
-        'Este curso apresenta técnicas básicas e intermediárias de análise de dados aplicadas à saúde: limpeza de dados, visualização, estatística descritiva e introdução a modelos preditivos.',
-    },
-    {
-      id: 2,
-      title: 'Telesaúde',
-      hours: '50',
-      description:
-        'Fundamentos e boas práticas da telesaúde: atendimento remoto, ética, legislação aplicável, ferramentas de teleconsulta e integração com prontuários eletrônicos.',
-    },
-    {
-      id: 3,
-      title: 'Gestão em Saúde Pública',
-      hours: '40',
-      description:
-        'Conceitos de planejamento, organização e avaliação de serviços de saúde pública. Indicadores, políticas, planejamento de campanhas e coordenação de equipes multiprofissionais.',
-    },
-    {
-      id: 4,
-      title: 'Inteligência Artificial na Saúde',
-      hours: '60',
-      description:
-        'Introdução ao uso de IA em saúde: pipelines de dados, validação de modelos, ética, viés e integração clínica. Técnicas de machine learning aplicadas a diagnóstico e predição de risco.',
-    },
-    {
-      id: 5,
-      title: 'Prontuário Eletrônico e Segurança de Dados',
-      hours: '35',
-      description:
-        'Práticas de implantação de prontuários eletrônicos, segurança da informação em saúde, normas de privacidade (LGPD), além de controles de acesso, logs e criptografia aplicada.',
-    },
-  ];
 
   const filteredCourses = courses.filter(
     (course) =>
@@ -65,7 +29,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-orange-50">
+    <div className="min-h-screen bg-gradient-to-br via-white">
       <main
         id="main-content"
         tabIndex="-1"
@@ -92,18 +56,19 @@ export default function Home() {
         </div>
 
         {/* Barra de Busca */}
-        {/* <div className="max-w-md mx-auto mb-12">
-          <div className="relative">
+        <div className="flex justify-center mb-12 px-2">
+          <div className="relative md:w-xl">
+            <Search className="absolute top-4 left-2.5 text-gray-400" />
             <Input
               type="text"
               placeholder="Buscar cursos..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="pl-10 pr-4 py-3 w-full rounded-full border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-lg"
+              className="pl-10 px-6 py-3 w-full rounded-full border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-lg"
               aria-label="Buscar cursos"
             />
           </div>
-        </div> */}
+        </div>
 
         {/* Cursos ou mensagem */}
         {filteredCourses.length > 0 ? (
@@ -118,12 +83,12 @@ export default function Home() {
             ))}
           </div>
         ) : (
-          <div className="text-center py-12">
-            <div className="text-gray-400 text-6xl mb-4">🔍</div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">
+          <div className="flex flex-col justify-center align-center text-center py-12">
+            <SearchSlash className="self-center mb-5 text-terciary" size={48} />
+            <h3 className="text-2xl font-bold text-terciary mb-2">
               Nenhum curso encontrado
             </h3>
-            <p className="text-gray-600">
+            <p className="text-terciary">
               Tente buscar com outros termos ou navegue pelos cursos
               disponíveis.
             </p>
