@@ -33,7 +33,7 @@ export default function Home({ courses }) {
       <main
         id="main-content"
         tabIndex="-1"
-        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        className="max-w-7xl mx-auto px-8 sm:px-6 lg:px-8">
         {/* Hero Section */}
         <div className="text-center flex flex-col justify-center items-center mb-12">
           <img
@@ -57,7 +57,7 @@ export default function Home({ courses }) {
 
         {/* Barra de Busca */}
         <div className="flex justify-center mb-12 px-2">
-          <div className="relative md:w-xl">
+          <div className="relative w-sm md:w-xl">
             <Search className="absolute top-4 left-2.5 text-gray-400" />
             <Input
               type="text"
