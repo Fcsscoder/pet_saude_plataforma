@@ -7,10 +7,10 @@ import SideBanner from '../imgs/SideBannerLogin.svg';
 
 export default function Home() {
   return (
-    <div className="relative p-5">
+    <div className="relative">
       <BackgroundDecoration />
       {/* Main content */}
-      <div className="relative min-h-200 flex items-center justify-center">
+      <div className="py-5 relative min-h-200 flex items-center justify-center">
         <div className="flex min-h-full items-center justify-center">
           {/* Left column - Login form */}
           <div className="order-2 lg:order-1">
