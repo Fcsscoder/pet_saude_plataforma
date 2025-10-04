@@ -39,9 +39,11 @@ const Navbar = () => {
               Cursos
             </Link>
             <div className="flex items-center">
-              <Button className="bg-white border-2 border-white text-primary font-medium rounded-full shadow-sm transition-all duration-200 hover:bg-primary hover:text-white">
-                Entrar
-              </Button>
+              <Link to={'/entrar'}>
+                <Button className="bg-white border-2 border-white text-primary font-medium rounded-full shadow-sm transition-all duration-200 hover:bg-primary hover:text-white">
+                  Entrar
+                </Button>
+              </Link>
               <Button className="bg-secondary border-2 border-secondary   text-white font-medium rounded-full shadow-sm transition-all duration-200 ml-5 hover:bg-orange-400 hover:text-white">
                 Inscreva-se
               </Button>

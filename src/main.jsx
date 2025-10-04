@@ -5,6 +5,7 @@ import App from './App.jsx';
 
 // Páginas
 import Courses from './pages/Courses.jsx';
+import Login from './pages/Login.jsx';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './pages/Home.jsx';
@@ -53,12 +54,16 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
+        path: '/',
+        element: <Home />,
+      },
+      {
         path: '/cursos',
         element: <Courses courses={courses} />,
       },
       {
-        path: '/',
-        element: <Home />,
+        path: '/entrar',
+        element: <Login />,
       },
     ],
   },

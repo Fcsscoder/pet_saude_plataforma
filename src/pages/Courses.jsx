@@ -72,7 +72,7 @@ export default function Courses({ courses }) {
 
         {/* Cursos ou mensagem */}
         {filteredCourses.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid mb-50 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredCourses.map((course) => (
               <CourseCard
                 key={course.id}
