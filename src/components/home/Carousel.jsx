@@ -2,22 +2,24 @@ import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Import } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 
+import Carrousel1 from '../../imgs/carousel/Carousel1.png';
+import Carrousel2 from '../../imgs/carousel/Carousel2.jpg';
+import Carrousel3 from '../../imgs/carousel/Carousel3.webp';
+
 const slides = [
   {
     id: 1,
-    title: 'Projeto Acadêmico Maciço de Baturité',
+    title: 'PET Saúde Digital',
     subtitle:
       'Promovendo desenvolvimento regional através da educação, pesquisa e extensão',
-    image:
-      'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200&q=80',
+    image: Carrousel1,
     highlight: 'Educação e Desenvolvimento',
   },
   {
     id: 2,
     title: 'Ações Integradas nos Municípios',
     subtitle: 'Conectando universidade e comunidade para transformação social',
-    image:
-      'https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=1200&q=80',
+    image: Carrousel2,
     highlight: 'Impacto Social',
   },
   {
@@ -25,8 +27,7 @@ const slides = [
     title: 'Pesquisa e Inovação Regional',
     subtitle:
       'Desenvolvendo soluções para os desafios locais do Maciço de Baturité',
-    image:
-      'https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=1200&q=80',
+    image: Carrousel3,
     highlight: 'Ciência e Tecnologia',
   },
 ];
@@ -96,7 +97,7 @@ export default function HeroCarousel() {
             <img
               src={slides[currentSlide].image}
               alt={slides[currentSlide].title}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover [object-position:50%_30%]"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-[#3490dc]/95 via-[#3490dc]/20 to-transparent" />
           </div>
@@ -135,13 +136,13 @@ export default function HeroCarousel() {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute cursor-pointer left-4 top-1/2 -translate-y-1/2 z-10 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white p-2 rounded-full transition-all duration-200"
+        className="hidden lg:block  absolute cursor-pointer left-4 top-1/2 -translate-y-1/2 z-10 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white p-2 rounded-full transition-all duration-200"
         aria-label="Slide anterior">
         <ChevronLeft className="w-6 h-6" />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 cursor-pointer -translate-y-1/2 z-10 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white p-2 rounded-full transition-all duration-200"
+        className="hidden lg:block absolute right-4 top-1/2 cursor-pointer -translate-y-1/2 z-10 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white p-2 rounded-full transition-all duration-200"
         aria-label="Próximo slide">
         <ChevronRight className="w-6 h-6" />
       </button>
