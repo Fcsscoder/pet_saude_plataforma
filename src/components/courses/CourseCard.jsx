@@ -10,7 +10,7 @@ import {
 
 // Componentes
 
-import Button from '../components/ui/Button';
+import Button from '../ui/Button';
 
 const CourseCard = ({ course, isExpanded, onToggle }) => {
   const iconMap = {

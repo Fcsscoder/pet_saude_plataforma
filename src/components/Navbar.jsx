@@ -1,6 +1,8 @@
-import Logo from '../../public/imgs/WhitePetSaude.png';
+import Logo from '../imgs/WhitePetSaude.png';
 import Button from './ui/Button';
 import { Menu } from 'lucide-react';
+
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -8,31 +10,34 @@ const Navbar = () => {
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <img
-            src={Logo}
-            alt="Logo Pet Saúde Digital"
-            className="w-10 md:w-12"
-          />
+          <Link to={'/'}>
+            <img
+              src={Logo}
+              alt="Logo Pet Saúde Digital"
+              className="w-10 md:w-12"
+            />
+          </Link>
+
           <Menu size={30} className="md:hidden" />
           {/* <img src={LogoName} className="w-20 h-auto" /> */}
 
           {/* Navegação Desktop */}
           <nav className="hidden md:flex space-x-8">
-            <a
-              href="#"
-              className="text-white hover:text-blue-100 px-3 py-2 text-lg font-medium transition-colors duration-200">
+            <Link
+              to={'/'}
+              className="text-white hover:text-blue-100 px-3 py-2 text-lg font-medium transition-colors duration-200 ">
               Início
-            </a>
-            <a
-              href="#"
-              className="text-white hover:text-blue-100 px-3 py-2 text-lg font-medium transition-colors duration-200">
-              Sobre Nós
-            </a>
-            <a
-              href="#"
+            </Link>
+            {/* <Link
+              to={'/cursos'}
               className="text-white hover:text-blue-100 px-3 py-2 text-lg font-medium transition-colors duration-200 ">
               Cursos
-            </a>
+            </Link> */}
+            <Link
+              to={'/cursos'}
+              className="text-white hover:text-blue-100 px-3 py-2 text-lg font-medium transition-colors duration-200 ">
+              Cursos
+            </Link>
             <div className="flex items-center">
               <Button className="bg-white border-2 border-white text-primary font-medium rounded-full shadow-sm transition-all duration-200 hover:bg-primary hover:text-white">
                 Entrar
