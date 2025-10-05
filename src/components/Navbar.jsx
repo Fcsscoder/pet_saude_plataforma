@@ -52,13 +52,11 @@ const Navbar = () => {
                 transition={{ duration: 0.4 }}
                 className="fixed inset-0 bg-secondary z-[998] flex flex-col justify-center gap-8">
                 <ul className="absolute top-25 left-20">
-                  <Link to={'/'}>
-                    <img
-                      src={Logo}
-                      alt="Logo Pet Saúde Digital"
-                      className="w-15 md:w-12"
-                    />
-                  </Link>
+                  <img
+                    src={WhitePetSaudeLogo}
+                    alt="Logo Pet Saúde Digital"
+                    className="w-15 md:w-12"
+                  />
                   {menuOptions.map((option, index) => (
                     <li key={index} className="text-2xl my-10">
                       <Link

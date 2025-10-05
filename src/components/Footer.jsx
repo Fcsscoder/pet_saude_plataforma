@@ -1,6 +1,5 @@
 import MinisterioLogo from '/imgs/footer/MinisterioSaudeLogo.svg';
 import SUSLogo from '/imgs/footer/SUSLogo.svg';
-import MinisterioNome from '/imgs/footer/MinisterioSaudeNome.svg';
 import UnilabLogo from '/imgs/footer/UNILABLogo.svg';
 
 import { ExternalLink, Globe, Phone, Mail } from 'lucide-react';
@@ -32,24 +31,19 @@ export default function LoginFooter() {
               <img
                 src={SUSLogo}
                 alt="Logomarca do SUS"
-                className="w-18 self-center"
+                className="w-16 self-center"
               />
-              <div className="flex flex-row items-center justify-center">
+              <div className="flex flex-row">
                 <img
                   src={MinisterioLogo}
                   alt="Logomarca Ministério da Saúde"
-                  className="w-10"
-                />
-                <img
-                  src={MinisterioNome}
-                  alt="Ministério da Saúde"
-                  className="w-15 ml-3"
+                  className="min-w-22 max-w-22"
                 />
               </div>
               <img
                 src={UnilabLogo}
                 alt="Logomarca Unilab"
-                className="w-16 self-center"
+                className="w-14 self-center"
               />
             </div>
           </div>
