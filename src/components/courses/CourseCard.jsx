@@ -1,3 +1,4 @@
+//Ícones
 import {
   BarChart3,
   Video,
@@ -8,8 +9,7 @@ import {
   ChevronUp,
 } from 'lucide-react';
 
-// Componentes
-
+// Componentes UI
 import Button from '../ui/Button';
 
 const CourseCard = ({ course, isExpanded, onToggle }) => {

@@ -1,4 +1,7 @@
+//Ícones
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
+
+//Componentes
 import SectionHeader from './SectionHeader';
 
 const contactInfo = [
@@ -36,7 +39,7 @@ export default function ContactSection() {
         subtitle="Entre em contato conosco para mais informações"
       />
 
-      <div className="bg-gradient-to-br from-[#3490dc] to-[#155dfc] rounded-lg shadow-lg p-8 mt-8 text-white">
+      <div className="bg-gradient-to-br from-[#3490dc] to-[#155dfc] rounded-lg shadow-lg p-4 sm:p-8 mt-8 text-white">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
           {contactInfo.map((info, index) => (
             <div key={index} className="flex items-start gap-4">

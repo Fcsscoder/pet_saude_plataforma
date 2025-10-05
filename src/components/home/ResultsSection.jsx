@@ -1,5 +1,9 @@
-import { TrendingUp, Users, BookOpen, Award } from 'lucide-react';
 import { motion } from 'framer-motion';
+
+// Ícones
+import { TrendingUp, Users, BookOpen, Award } from 'lucide-react';
+
+//Componentes
 import SectionHeader from './SectionHeader';
 import StatCard from './StatCard';
 

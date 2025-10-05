@@ -1,7 +1,9 @@
+//Imagens
 import MinisterioLogo from '/imgs/footer/MinisterioSaudeLogo.svg';
 import SUSLogo from '/imgs/footer/SUSLogo.svg';
 import UnilabLogo from '/imgs/footer/UNILABLogo.svg';
 
+//Ícones
 import { ExternalLink, Globe, Phone, Mail } from 'lucide-react';
 
 export default function LoginFooter() {

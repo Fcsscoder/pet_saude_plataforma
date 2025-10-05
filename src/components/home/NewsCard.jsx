@@ -1,3 +1,4 @@
+//Ícones
 import { Calendar, Tag, ArrowRight } from 'lucide-react';
 
 const categoryColors = {

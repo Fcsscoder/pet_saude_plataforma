@@ -1,7 +1,11 @@
+import { motion } from 'framer-motion';
+
+//Ícones
 import { Newspaper, Calendar, ArrowRight } from 'lucide-react';
+
+//Componentes
 import SectionHeader from './SectionHeader';
 import NewsCard from './NewsCard';
-import { motion } from 'framer-motion';
 
 const newsItems = [
   {

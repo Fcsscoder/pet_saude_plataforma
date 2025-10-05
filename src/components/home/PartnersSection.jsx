@@ -1,5 +1,6 @@
-import React from 'react';
 import { motion } from 'framer-motion';
+
+//Componentes
 import SectionHeader from './SectionHeader';
 
 const partners = [

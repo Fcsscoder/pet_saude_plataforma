@@ -1,10 +1,10 @@
-// Imagens
+//Imagens
 import WhitePetSaudeLogo from '/imgs/WhitePetSaude.png';
 
-//UI
+//Componentes UI
 import Button from './ui/Button';
 
-//Icons
+//Ícones
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
@@ -26,6 +26,10 @@ const Navbar = () => {
       label: 'Entrar',
       path: '/entrar',
     },
+    {
+      label: 'Cadastras',
+      path: '/cadastrar',
+    },
     { label: 'Nossos cursos', path: '/cursos' },
   ];
 
@@ -41,6 +45,7 @@ const Navbar = () => {
               className="w-10 md:w-12"
             />
           </Link>
+
           {/*Navegação Mobile */}
           <Menu size={30} className="md:hidden" onClick={handleMenu} />
           <AnimatePresence>
@@ -95,9 +100,11 @@ const Navbar = () => {
                   Entrar
                 </Button>
               </Link>
-              <Button className="bg-secondary border-secondary py-2 text-white font-medium rounded-full shadow-sm transition-all duration-200 ml-5 hover:bg-darken-secondary hover:text-white">
-                Inscreva-se
-              </Button>
+              <Link to={'/cadastrar'}>
+                <Button className="bg-secondary border-secondary py-2 text-white font-medium rounded-full shadow-sm transition-all duration-200 ml-5 hover:bg-darken-secondary hover:text-white">
+                  Inscreva-se
+                </Button>
+              </Link>
             </div>
           </nav>
           {/* Botão Entrar */}

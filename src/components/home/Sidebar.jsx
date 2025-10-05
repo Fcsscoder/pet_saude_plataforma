@@ -1,4 +1,7 @@
 import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+
+// Ícones
 import {
   ChevronRight,
   FileText,
@@ -7,7 +10,6 @@ import {
   ExternalLink,
   MapPin,
 } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
 
 const quickLinks = [
   { title: 'Editais e Processos Seletivos', icon: FileText, badge: '2 novos' },

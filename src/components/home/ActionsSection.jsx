@@ -1,5 +1,9 @@
 import { motion } from 'framer-motion';
+
+//Ícones
 import { GraduationCap, FlaskConical, Handshake, Award } from 'lucide-react';
+
+//Componentes
 import SectionHeader from './SectionHeader';
 import ActionCard from './ActionCard';
 

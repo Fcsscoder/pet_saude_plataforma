@@ -1,9 +1,12 @@
+//Componentes UI
 import Input from '../ui/Input';
+
+//Ícones
 import { ArrowRight, Shield, Lock } from 'lucide-react';
 
 export default function LoginContainer() {
   return (
-    <div className="relative bg-white w-100 sm:w-120 rounded-3xl shadow-2xl p-10 border border-gray-100">
+    <div className="relative bg-white w-100 sm:w-120 rounded-3xl shadow-2xl p-8 border border-gray-100">
       <div className="relative">
         <div className="mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-3">Entrar</h2>

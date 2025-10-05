@@ -6,9 +6,10 @@ import App from './App.jsx';
 // Páginas
 import Courses from './pages/Courses.jsx';
 import Login from './pages/Login.jsx';
+import Register from './pages/Register.jsx';
+import Home from './pages/Home.jsx';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Home from './pages/Home.jsx';
 
 const courses = [
   {
@@ -64,6 +65,10 @@ const router = createBrowserRouter([
       {
         path: '/entrar',
         element: <Login />,
+      },
+      {
+        path: '/cadastrar',
+        element: <Register />,
       },
     ],
   },

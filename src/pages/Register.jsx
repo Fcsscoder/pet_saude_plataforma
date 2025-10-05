@@ -1,21 +1,20 @@
-import LoginContainer from '../components/login/LoginContainer';
+import RegisterContainer from '../components/register/RegisterContainer';
 import BackgroundDecoration from '../components/BackgroundDecoration';
 
-import SideBanner from '/imgs/SideBannerLogin.svg';
+import SideBanner from '/imgs/SideBannerRegister.svg';
 
-export default function Home() {
+export default function Register() {
   return (
     <div className="relative">
       <BackgroundDecoration />
       {/* Main content */}
-      <div className="py-5 relative min-h-200 flex items-center justify-center">
+      <div className="py-5 relative min-h-230 flex items-center justify-center">
         <div className="flex min-h-full items-center justify-center">
-          {/* Left column - Login form */}
           <div className="order-2 lg:order-1">
-            <LoginContainer />
+            <RegisterContainer />
           </div>
           <img
-            className="hidden lg:block w-135 [mask-image:linear-gradient(to_top,transparent_5%,black_30%)]"
+            className="hidden lg:block w-150 [mask-image:linear-gradient(to_top,transparent_5%,black_30%)]"
             src={SideBanner}
             alt="Imagem de um garota com celular na mão"
           />

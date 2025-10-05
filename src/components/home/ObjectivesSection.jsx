@@ -1,5 +1,9 @@
 import { motion } from 'framer-motion';
+
+//Ícones
 import { Target, Users, BookOpen, Lightbulb } from 'lucide-react';
+
+// Componentes
 import SectionHeader from './SectionHeader';
 import ObjectiveCard from './ObjectiveCard';
 
