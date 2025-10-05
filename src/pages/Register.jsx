@@ -8,7 +8,7 @@ export default function Register() {
     <div className="relative">
       <BackgroundDecoration />
       {/* Main content */}
-      <div className="py-5 relative min-h-230 flex items-center justify-center">
+      <div className="py-5 relative min-h-220 flex items-center justify-center">
         <div className="flex min-h-full items-center justify-center">
           <div className="order-2 lg:order-1">
             <RegisterContainer />

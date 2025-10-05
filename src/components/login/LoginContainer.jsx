@@ -6,7 +6,7 @@ import { ArrowRight, Shield, Lock } from 'lucide-react';
 
 export default function LoginContainer() {
   return (
-    <div className="relative bg-white w-100 sm:w-120 rounded-3xl shadow-2xl p-8 border border-gray-100">
+    <div className="relative bg-white w-100 sm:w-120 rounded-3xl sm:shadow-2xl p-10 sm:p-8 border-0 sm:border border-gray-100">
       <div className="relative">
         <div className="mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-3">Entrar</h2>
@@ -31,7 +31,7 @@ export default function LoginContainer() {
         </div>
 
         {/* Action button placeholder */}
-        <button className="w-full h-14 bg-gradient-to-r from-[#3490dc] to-[#155dfc] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-3 group cursor-pointer">
+        <button className="w-60 m-auto sm:w-full h-14 bg-gradient-to-r from-[#3490dc] to-[#155dfc] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-3 group cursor-pointer">
           <span className="text-white font-semibold text-lg">
             Entrar no Sistema
           </span>
