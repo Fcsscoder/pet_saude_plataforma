@@ -27,7 +27,7 @@ const Navbar = () => {
       path: '/entrar',
     },
     {
-      label: 'Cadastras',
+      label: 'Cadastrar',
       path: '/cadastrar',
     },
     { label: 'Nossos cursos', path: '/cursos' },
@@ -107,7 +107,6 @@ const Navbar = () => {
               </Link>
             </div>
           </nav>
-          {/* Botão Entrar */}
         </div>
       </div>
     </header>
