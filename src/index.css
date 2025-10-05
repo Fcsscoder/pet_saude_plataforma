@@ -2,6 +2,8 @@
 
 @theme {
   --color-primary: #3490dc;
+  --color-brigten-primary: #bce3f1;
   --color-secondary: #e8501e;
+  --color-darken-secondary: #d14318;
   --color-terciary: #155dfc;
 }

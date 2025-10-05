@@ -31,7 +31,7 @@ export default function Home() {
             <ObjectivesSection />
             <ActionsSection />
             <ResultsSection />
-            <PartnersSection />
+            {/* <PartnersSection /> */}
             <ContactSection />
           </main>
         </div>

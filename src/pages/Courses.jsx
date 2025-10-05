@@ -5,8 +5,8 @@ import CourseCard from '../components/courses/CourseCard';
 import Input from '../components/ui/Input';
 
 // Imagens
-import CourseBanner from '../imgs/CoursesBanner.png';
-import Logo from '../imgs/PetSaude.png';
+import CourseBanner from '/imgs/CoursesBanner.png';
+import PetSaudeLogo from '/imgs/PetSaudeLogo.svg';
 
 // Ícones
 import { SearchSlash, Search } from 'lucide-react';
@@ -42,7 +42,7 @@ export default function Courses({ courses }) {
             className="hidden md:block w-500 text-center rounded-b-3xl"
           />
           <img
-            src={Logo}
+            src={PetSaudeLogo}
             alt="Logo Pet Saúde Digital"
             className="w-15 sm:w-26 text-center mt-10"
           />

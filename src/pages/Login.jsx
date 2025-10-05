@@ -3,7 +3,7 @@ import LoginContainer from '../components/login/LoginContainer';
 import LoginFooter from '../components/login/LoginFooter';
 import BackgroundDecoration from '../components/login/BackgroundDecoration';
 
-import SideBanner from '../imgs/SideBannerLogin.svg';
+import SideBanner from '/imgs/SideBannerLogin.svg';
 
 export default function Home() {
   return (

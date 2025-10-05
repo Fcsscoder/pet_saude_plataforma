@@ -69,7 +69,7 @@ export default function ContactSection() {
               placeholder="Sua mensagem"
               className="md:col-span-2 px-4 py-3 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 resize-none"
             />
-            <button className="md:col-span-2 cursor-pointer bg-[#e8501e] hover:bg-[#d14318] text-white font-semibold py-3 px-6 rounded-lg transition-colors">
+            <button className="md:col-span-2 cursor-pointer bg-secondary hover:bg-[#d14318] text-white font-semibold py-3 px-6 rounded-lg transition-colors">
               Enviar Mensagem
             </button>
           </div>

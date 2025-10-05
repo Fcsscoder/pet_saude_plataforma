@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Import } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 
-import Carrousel1 from '../../imgs/carousel/Carousel1.png';
-import Carrousel2 from '../../imgs/carousel/Carousel2.jpg';
-import Carrousel3 from '../../imgs/carousel/Carousel3.webp';
+import Carrousel1 from '/imgs/carousel/Carousel1.png';
+import Carrousel2 from '/imgs/carousel/Carousel2.jpg';
+import Carrousel3 from '/imgs/carousel/Carousel3.webp';
 
 const slides = [
   {

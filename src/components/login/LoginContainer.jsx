@@ -6,21 +6,25 @@ export default function LoginContainer() {
     <div className="relative bg-white w-100 sm:w-120 rounded-3xl shadow-2xl p-10 border border-gray-100">
       <div className="relative">
         <div className="mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-3">
-            Acesso ao Sistema
-          </h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-3">Entrar</h2>
         </div>
 
         {/* Login form placeholder area */}
         <div className="space-y-4 mb-6 flex flex-col border-0">
-          <label htmlFor="" className="text-gray-900 font-normal text-lg">
+          <label htmlFor="" className="text-gray-900 font-normal text-lg mb-1 ">
             Email
           </label>
-          <Input className="border-2 border-gray-300" />
-          <label htmlFor="" className="text-gray-900 font-normal text-lg">
+          <Input
+            className=" border-gray-300 outline-0 border-b-2 border-t-0 border-x-0"
+            placeholder={'example@gmail.com'}
+          />
+          <label htmlFor="" className="text-gray-900 font-normal text-lg mb-1">
             Senha
           </label>
-          <Input className="border-2 border-gray-300" />
+          <Input
+            className="border-gray-300 outline-0 border-b-2 border-t-0 border-x-0"
+            placeholder={'***********'}
+          />
         </div>
 
         {/* Action button placeholder */}
@@ -42,7 +46,7 @@ export default function LoginContainer() {
         </div>
 
         {/* Security badge */}
-        <div className="mt-8 pt-6 border-t border-gray-100">
+        <div className="mt-4 pt-6 border-t border-gray-100">
           <div className="flex items-center gap-2 text-gray-500">
             <Shield className="w-4 h-4" />
             <span className="text-xs">Conexão segura e criptografada</span>
