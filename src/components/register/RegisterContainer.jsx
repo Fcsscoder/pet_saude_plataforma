@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 //Componentes UI
 import Input from '../ui/Input';
 
@@ -121,9 +123,11 @@ export default function RegisterContainer() {
 
         {/* Additional options */}
         <div className="mt-6 flex items-center justify-center text-sm">
-          <button className="text-[#3490dc] hover:text-[#155dfc] font-medium transition-colors cursor-pointer">
-            Já tenho uma conta
-          </button>
+          <Link to={'/entrar'}>
+            <button className="text-[#3490dc] hover:text-[#155dfc] font-medium transition-colors cursor-pointer">
+              Já tenho uma conta
+            </button>
+          </Link>
         </div>
 
         {/* Security badge */}

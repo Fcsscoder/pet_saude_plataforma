@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 //Ícones
 import {
   BarChart3,
@@ -72,10 +74,11 @@ const CourseCard = ({ course, isExpanded, onToggle }) => {
               </>
             )}
           </Button>
-
-          <Button className="bg-secondary text-white mt-4 p-0 h-auto font-medium cursor-pointer">
-            Acessar
-          </Button>
+          <Link to={'id'}>
+            <Button className="bg-secondary text-white mt-4 p-0 h-auto font-medium cursor-pointer">
+              Acessar
+            </Button>
+          </Link>
         </div>
       </div>
     </div>

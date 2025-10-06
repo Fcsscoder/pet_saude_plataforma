@@ -91,12 +91,12 @@ const Navbar = () => {
             </Link>
             <Link
               to={'/cursos'}
-              className="text-white hover:text-blue-100 px-3 py-2 text-lg font-medium transition-colors duration-200 ">
+              className="text-white hover:text-blue-100 px-3 py-2 text-lg font-medium transition-colors duration-200">
               Cursos
             </Link>
             <div className="flex items-center">
               <Link to={'/entrar'}>
-                <Button className="bg-white border-2 border-white text-primary font-medium rounded-full shadow-sm transition-all duration-200 hover:bg-primary hover:text-white">
+                <Button className="text-white hover:text-blue-100 px-3 py-2 text-lg font-medium transition-colors duration-200">
                   Entrar
                 </Button>
               </Link>

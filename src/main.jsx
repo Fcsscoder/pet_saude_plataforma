@@ -5,6 +5,7 @@ import App from './App.jsx';
 
 // Páginas
 import Courses from './pages/Courses.jsx';
+import CourseDetail from './pages/CourseDetail.jsx';
 import Login from './pages/Login.jsx';
 import Register from './pages/Register.jsx';
 import Home from './pages/Home.jsx';
@@ -61,6 +62,10 @@ const router = createBrowserRouter([
       {
         path: '/cursos',
         element: <Courses courses={courses} />,
+      },
+      {
+        path: '/cursos/id',
+        element: <CourseDetail />,
       },
       {
         path: '/entrar',

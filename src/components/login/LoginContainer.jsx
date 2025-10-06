@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 //Componentes UI
 import Input from '../ui/Input';
 
@@ -43,9 +45,11 @@ export default function LoginContainer() {
           <button className="text-[#3490dc] hover:text-[#155dfc] font-medium transition-colors cursor-pointer">
             Esqueci minha senha
           </button>
-          <button className="text-gray-600 hover:text-gray-900 font-medium transition-colors cursor-pointer">
-            Primeiro acesso
-          </button>
+          <Link to={'/cadastrar'}>
+            <button className="text-gray-600 hover:text-gray-900 font-medium transition-colors cursor-pointer">
+              Primeiro acesso
+            </button>
+          </Link>
         </div>
 
         {/* Security badge */}
