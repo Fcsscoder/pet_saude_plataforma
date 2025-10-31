@@ -29,6 +29,7 @@ export default function LoginContainer() {
           <Input
             className="border-gray-300 outline-0 border-b-2 border-t-0 border-x-0"
             placeholder={'***********'}
+            type={'password'}
           />
         </div>
 
